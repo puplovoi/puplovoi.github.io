@@ -3,8 +3,7 @@
   <entry>
     <title>实验一</title>
     <url>/2024/10/05/558433c7/</url>
-    <content><![CDATA[<p><img src="/bd20261029c3348270a385b9a6d6a62.jpg"></p>
-<pre><code class="c++">#include &lt;stdio.h&gt;
+    <content><![CDATA[<pre><code class="c++">#include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
 
 // 定义单链表节点结构体
