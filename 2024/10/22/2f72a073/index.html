@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2024 SHCTF | Puplovoi&#39;s blog</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="2024 SHCTF | Puplovoi&#39;s blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="All Categories">
+<meta property="og:url" content="https://puplovoi.github.io/categories/index.html">
+<meta property="og:site_name" content="Puplovoi&#39;s blog">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-02-02T12:00:02.000Z">
+<meta property="article:modified_time" content="2024-10-05T02:26:18.662Z">
+<meta property="article:author" content="puplovoi">
+<meta property="article:tag" content="CTF, Crypto">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-dark.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="false" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>puplovoi</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="github"
+               href="https://github.com/puplovoi"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:2921642540@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+        </div>
+    </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="比赛小屋">
+            
+            比赛小屋
+            
+        </div>
+        
+    </li>
+
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  site_url"
+               
+               href="/about">About</a>
+        
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="4">
+<input type="hidden" id="yelog_site_word_count" value="4.5k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="search shortcut key i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="switch to outline view shortcut key w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="return"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="case sensitive"></i>
+            <i class="iconfont icon-tag" data-title="label"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">outline</div>
+            <i class="iconfont icon-list" data-title="switch to article list"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="All 比赛小屋 "
+           href="/2024/10/22/bb6cbb89/"
+           data-tag=""
+           data-author="puplovoi" >
+            <span class="post-title" title="2024 moectf">2024 moectf</span>
+            <span class="post-date" title="2024-10-22 13:59:00">2024/10/22</span>
+        </a>
+        
+        
+        <a  class="All 比赛小屋 "
+           href="/2024/10/22/7314e54a/"
+           data-tag=""
+           data-author="puplovoi" >
+            <span class="post-title" title="2024 源鲁杯">2024 源鲁杯</span>
+            <span class="post-date" title="2024-10-22 13:49:51">2024/10/22</span>
+        </a>
+        
+        
+        <a  class="All 比赛小屋 "
+           href="/2024/10/22/6ddd94e3/"
+           data-tag=""
+           data-author="puplovoi" >
+            <span class="post-title" title="2024 newstar">2024 newstar</span>
+            <span class="post-date" title="2024-10-22 13:49:18">2024/10/22</span>
+        </a>
+        
+        
+        <a  class="All 比赛小屋 "
+           href="/2024/10/22/2f72a073/"
+           data-tag=""
+           data-author="puplovoi" >
+            <span class="post-title" title="2024 SHCTF">2024 SHCTF</span>
+            <span class="post-date" title="2024-10-22 13:49:11">2024/10/22</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="Toggle full screen shortcut key s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-山河CTF" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">2024 SHCTF</h1>
+    
+    <div class="article-meta">
+        
+        
+        <span class="author"><a>puplovoi</a></span>
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="比赛小屋">比赛小屋</a>
+            
+        </span>
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2024-10-22 13:57:28'>2024-10-22 13:49</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>Count:1.4k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Week1"><span class="toc-text">Week1</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#EzAES"><span class="toc-text">EzAES</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-Crypto"><span class="toc-text">Hello Crypto</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#baby-mod"><span class="toc-text">baby_mod</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#d-known"><span class="toc-text">d_known</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#factor"><span class="toc-text">factor</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Week2"><span class="toc-text">Week2</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#E-R"><span class="toc-text">E&amp;R</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pading"><span class="toc-text">pading</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#worde%E5%BE%88%E5%A4%A7"><span class="toc-text">worde很大</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Week1"><a href="#Week1" class="headerlink" title="Week1"></a>Week1</h1><h2 id="EzAES"><a href="#EzAES" class="headerlink" title="EzAES"></a>EzAES</h2><pre><code class="python">from Crypto.Cipher import AES
+import os
+
+iv = os.urandom(16)
+key = os.urandom(16)
+my_aes = AES.new(key, AES.MODE_CBC, iv)
+flag = open(&#39;flag.txt&#39;, &#39;rb&#39;).read()
+flag += (16 - len(flag) % 16) * b&#39; &#39;
+c = my_aes.encrypt(flag)
+print(c)
+print(iv)
+print(key)
+&#39;&#39;&#39;
+b&#39;\xe6\x1fD\x8bn*\xb2!5DaE\xee\x83\x86_\x86\x08\xdb\xea\xf3q99\xfa\x08]\x17n\x96.\xf0\xcb9\x15\xa8\xf0\x12\xe85p\xa8\xfc\x1e\x12\xbfl\x0c&#39;
+b&#39;\xf8\x1f\xb2\xa2\xdb\x84\xc8\xb8\x9bh\xa4Uh|\xed\xae&#39;
+b&#39;\x13\xde\xf6Y\xe7H\x89H|\xce\x1fTkz\xe6\n&#39;
+&#39;&#39;&#39;
+</code></pre>
+<p>exp:</p>
+<pre><code class="python">from Crypto.Cipher import AES
+
+ciphertext = b&#39;\xe6\x1fD\x8bn*\xb2!5DaE\xee\x83\x86_\x86\x08\xdb\xea\xf3q99\xfa\x08]\x17n\x96.\xf0\xcb9\x15\xa8\xf0\x12\xe85p\xa8\xfc\x1e\x12\xbfl\x0c&#39;
+iv = b&#39;\xf8\x1f\xb2\xa2\xdb\x84\xc8\xb8\x9bh\xa4Uh|\xed\xae&#39;
+key = b&#39;\x13\xde\xf6Y\xe7H\x89H|\xce\x1fTkz\xe6\n&#39;
+
+aes = AES.new(key, AES.MODE_CBC, iv)
+decrypted_flag = aes.decrypt(ciphertext)
+decrypted_flag = decrypted_flag.rstrip(b&#39; &#39;)
+
+print(decrypted_flag.decode())
+</code></pre>
+<h2 id="Hello-Crypto"><a href="#Hello-Crypto" class="headerlink" title="Hello Crypto"></a>Hello Crypto</h2><pre><code class="python">m = 215055650564999509155326058585660295319513294943685548748323206379977260136134233952601043141828377900172372474598051314301
+print(long_to_bytes(m))
+</code></pre>
+<h2 id="baby-mod"><a href="#baby-mod" class="headerlink" title="baby_mod"></a>baby_mod</h2><pre><code class="python">from Crypto.Util.number import *
+from enc import flag
+
+m = bytes_to_long(flag)
+p = getPrime(512)
+q = getPrime(512)
+r = getPrime(777)
+t = getPrime(777)
+tmp = getPrime(15)
+e = 65537
+n = p*q
+print(f&quot;c = &#123;pow(m,e,n)&#125;&quot;)
+print(f&quot;leak = &#123;p*r-q*t-tmp&#125;&quot;)
+print(f&quot;r = &#123;r&#125;&quot;)
+print(f&quot;t = &#123;t&#125;&quot;)
+&#39;&#39;&#39;
+c = 61211771638158371087808400372918576738939016114990617234184110097298299419154496357343926914405803526196970530921576382828387503007331401017198350535164213495715440525133378099636783880540843497044492711316786652114251942258505914694075893281219672129646672393261293645049489777097400432566313708247399622553
+leak = -1252849504732846691436274926240147548139531100983805052435309927194848742222153277186099477028462582629799465992084760143354445381099735801300065566762557123147846460105037981222278579628553259685633888197421663719015114218778689216903214380960113075271124329685535690780139961213564358588885756205002999772883325078761443924453722635981864064361638746711520896205568785840606997401884139
+r = 536741313487865680021850054550575718160071762359365703121122133538676775165614196816470242976654893518050377281172378029389910347012355575822887151594996160422316967245952449856330498078814859567536192742194556882943652058284677316663
+t = 715587548116016583182373119840004916400694943609746480855437504057056067467359267834474943781297633252545077271085397197104023684431804124367370885385718787258143315642069791507889894766685591493426037264574231236323589784717650593003
+&#39;&#39;&#39;
+</code></pre>
+<p>exp:</p>
+<pre><code class="python">from Crypto.Util.number import *
+import gmpy2
+
+c = 61211771638158371087808400372918576738939016114990617234184110097298299419154496357343926914405803526196970530921576382828387503007331401017198350535164213495715440525133378099636783880540843497044492711316786652114251942258505914694075893281219672129646672393261293645049489777097400432566313708247399622553
+leak = -1252849504732846691436274926240147548139531100983805052435309927194848742222153277186099477028462582629799465992084760143354445381099735801300065566762557123147846460105037981222278579628553259685633888197421663719015114218778689216903214380960113075271124329685535690780139961213564358588885756205002999772883325078761443924453722635981864064361638746711520896205568785840606997401884139
+r = 536741313487865680021850054550575718160071762359365703121122133538676775165614196816470242976654893518050377281172378029389910347012355575822887151594996160422316967245952449856330498078814859567536192742194556882943652058284677316663
+t = 715587548116016583182373119840004916400694943609746480855437504057056067467359267834474943781297633252545077271085397197104023684431804124367370885385718787258143315642069791507889894766685591493426037264574231236323589784717650593003
+e = 65537
+
+tmp = 1&lt;&lt;12
+while tmp&lt;(1&lt;&lt;15):
+    tmp = gmpy2.next_prime(tmp)
+    p = (leak+tmp)%t * gmpy2.invert(r,t)%t
+    if isPrime(p):
+        d = gmpy2.invert(e,p-1)
+        print(long_to_bytes(pow(c,d,p)))
+ 
+#(leak_tmp)%r = -qt%r = -q + t%r  
+#SHCTF&#123;992cd020-c077-4322-b725-42abb07351c8&#125;
+</code></pre>
+<h2 id="d-known"><a href="#d-known" class="headerlink" title="d_known"></a>d_known</h2><pre><code class="python">from Crypto.Util.number import *
+from gmpy2 import*
+from flag import flag
+
+m = bytes_to_long(flag)
+p = getPrime(1024)
+q = next_prime(p)
+n = p * q
+e = 0x10001
+d = inverse(e, (p-1) * (q-1))
+c = pow(m, e, n)
+print(c)
+print(d)
+
+&#39;&#39;&#39;
+c = 4600230281267670190398691735540287332835029091649559162242994978060955322828010435731136178500465942054812311232624925489266243836092176501791621127782184537767161909907416813615253739010690520590986413319986775468559116670278196282034112172658877486112219076392555621281074647641440128758471132003490453972896684466780331920970202661656629733866661340879988071638470586209790421838567131974190000906381034342845259079134283494397567384976584862013092376473009692460708922537454131054606615864569082664299799733297934161568618242736513760486480396700350252805192779870047955771000392233372656197050480109393862239035
+d = 1637399515703211078397367150183478186660293773954718953877315813051552836707867873798116237441650111482157214602021048679216717916201356350202988580017364819110062586396238837612080674485212200365636490187400223340528641847035869050414280344510481226645955663214349193813227527693154828870146312003753751686169722675486775232603248961369988600106180197208602445313595652812166427339426694174681115077765663663654241025593890251212572938818736503373294960126743060991203594966295858520465592922805973908341744918382431029027899653690095400830917742533201101270475933382707928321772881673270715605569460793612419884801
+&#39;&#39;&#39;
+</code></pre>
+<p>exp:</p>
+<pre><code class="python">from Crypto.Util.number import *
+import gmpy2
+
+c = 4600230281267670190398691735540287332835029091649559162242994978060955322828010435731136178500465942054812311232624925489266243836092176501791621127782184537767161909907416813615253739010690520590986413319986775468559116670278196282034112172658877486112219076392555621281074647641440128758471132003490453972896684466780331920970202661656629733866661340879988071638470586209790421838567131974190000906381034342845259079134283494397567384976584862013092376473009692460708922537454131054606615864569082664299799733297934161568618242736513760486480396700350252805192779870047955771000392233372656197050480109393862239035
+d = 1637399515703211078397367150183478186660293773954718953877315813051552836707867873798116237441650111482157214602021048679216717916201356350202988580017364819110062586396238837612080674485212200365636490187400223340528641847035869050414280344510481226645955663214349193813227527693154828870146312003753751686169722675486775232603248961369988600106180197208602445313595652812166427339426694174681115077765663663654241025593890251212572938818736503373294960126743060991203594966295858520465592922805973908341744918382431029027899653690095400830917742533201101270475933382707928321772881673270715605569460793612419884801
+e = 0x10001
+
+ed1 = e*d - 1
+for k in range(1, e):
+    if ed1%k == 0:
+        phi = ed1//k 
+        p = gmpy2.iroot(phi,2)[0]
+        p = gmpy2.next_prime(p)
+        q = phi//(p-1)+1
+        if phi%(p-1) == 0 and isPrime(q):
+            n = p*q 
+            m = pow(c,d,p*q)
+            print(long_to_bytes(m))
+</code></pre>
+<h2 id="factor"><a href="#factor" class="headerlink" title="factor"></a>factor</h2><pre><code class="python">from Crypto.Util.number import *
+import random
+from enc import flag
+
+m = bytes_to_long(flag)
+e = 65537
+def prod(iterable):
+    result = 1
+    for num in iterable:
+        result *= num
+    return result
+prime_list = [getPrime(64) for _ in  range(10) ]
+N = prod(prime_list)
+p_list = random.sample(prime_list,7)
+n = prod(p_list)
+c = pow(m,e,n)
+print(f&quot;c = &#123;c&#125;&quot;)
+print(f&quot;N = &#123;N&#125;&quot;)
+&#39;&#39;&#39;
+c = 73488169667020343318223059126014050465055844906415659708825933450494977910190223838429937933790517351045497142177773714983767121855464
+N = 431232874576301127435127434279825533139630015759842615056687579694019220839209951903564919902341404408199034325446387060799438649314010381072226821967363534469677017755666763642624118218930109
+&#39;&#39;&#39;
+</code></pre>
+<p>先yafu分解，然后再逐个穷举</p>
+<p>exp:</p>
+<pre><code class="python">from Crypto.Util.number import *
+
+c = 73488169667020343318223059126014050465055844906415659708825933450494977910190223838429937933790517351045497142177773714983767121855464
+N = 431232874576301127435127434279825533139630015759842615056687579694019220839209951903564919902341404408199034325446387060799438649314010381072226821967363534469677017755666763642624118218930109
+e = 65537
+
+p = 9292812348409556171
+q = 16318832756704646269
+
+prime_list = [9292812348409556171,16318832756704646269,17985845699822927027,13846300579242252271,15496860097451023303,15238533262838411711,13697383528283934943,18191077546028667869,13237487137576261919,14659613209196126947]
+phi1 = 1
+for i in prime_list:
+    phi1 *= i - 1
+
+for i in prime_list:
+    for j in prime_list:
+        for k in prime_list:
+            phi = phi1 // (i - 1) // (j - 1) // (k - 1)
+            d = inverse(e, phi)
+            n = N // (i * j * k)
+            m = pow(c, d, n)
+            if b&#39;SHCTF&#123;&#39; in long_to_bytes(m):
+                print(long_to_bytes(m))
+</code></pre>
+<h1 id="Week2"><a href="#Week2" class="headerlink" title="Week2"></a>Week2</h1><h2 id="E-R"><a href="#E-R" class="headerlink" title="E&amp;R"></a>E&amp;R</h2><pre><code class="python">#sage
+from Crypto.Util.number import *
+from secret import flag
+
+flag = flag[6:-1]
+l = len(flag)
+m1 = bytes_to_long(flag[:l//2])
+m2 = bytes_to_long(flag[l//2:])
+#RSA
+p = getPrime(256)
+q = getPrime(256)
+n = p * q
+e = 65537
+r_q = int(bin(q)[2:][::-1] , 2)
+leak = p ^^ r_q
+c = pow(m2,e,n)
+
+#ECC
+E = EllipticCurve(Zmod(n),[114514,1919810])
+G = E.lift_x(Integer(m1))
+P = G * e
+print(f&#39;leak = &#123;leak&#125;&#39;)
+print(f&#39;n = &#123;n&#125;&#39;)
+print(f&#39;c = &#123;c&#125;&#39;)
+print(f&#39;P = &#123;P&#125;&#39;)
+# leak = 5599968251197363876087002284371721787318931284225671549507477934076746561842
+# n = 7120275986401660066259983193598830554385933355254283093021239164350142898387660104515624591378875067038235085428170557400012848874756868985306042421950909
+# c = 6803450117490196163076010186755045681029929816618361161925865477601994608941714788803007124967390157378525581080320415602012078322064392991884070073083436
+# P = (4143131125485719352848137000299706175276016714942734255688381872061184989156686585992844083387698688432978380177564346382756951426943827434190895490233627 : 3879946878859691332371384275396678851932267609535096278038417524609690721322205780110680003522999409696718745532857001461869452116434787256032366267905519 : 1)
+</code></pre>
+<p>exp:</p>
+<p>爆破p</p>
+<pre><code class="python">from Crypto.Util.number import *
+import gmpy2
+
+leak = 5599968251197363876087002284371721787318931284225671549507477934076746561842
+n = 7120275986401660066259983193598830554385933355254283093021239164350142898387660104515624591378875067038235085428170557400012848874756868985306042421950909
+c = 6803450117490196163076010186755045681029929816618361161925865477601994608941714788803007124967390157378525581080320415602012078322064392991884070073083436
+P = (4143131125485719352848137000299706175276016714942734255688381872061184989156686585992844083387698688432978380177564346382756951426943827434190895490233627,3879946878859691332371384275396678851932267609535096278038417524609690721322205780110680003522999409696718745532857001461869452116434787256032366267905519)
+e = 65537
+
+# flag2
+def pq_xor(tp,tq,idx):
+    global ok,cnt 
+    if ok:
+        return 
+ 
+    #通过tq的尾部得到tp的尾部
+    mod =2^idx 
+    p = int(tp,2)
+    ql = int(tq[::-1],2)%mod
+    pl = N*gmpy2.invert(ql,mod)%mod
+    p += pl
+    #通过p的尾部得到q的头部
+    qh = (pl^^leak)%mod
+    # print(hex(qh),hex(pl), hex(mod),hex(pl^^leak))
+    q = int((bin(qh)[2:].zfill(256))[::-1],2)+ql
+    mid = int(&#39;1&#39;*(256-2*idx) + &#39;0&#39;*idx,2)
+    print(hex(mid))
+    print(hex(p))
+    print(hex(q))
+    #过滤掉越界的部分
+    if p*q&gt;N:
+        return False 
+    elif (p+mid)*(q+mid)&lt;N:
+        return False    
+    
+    if idx&gt;=80:
+        cnt += 1
+        try:
+            PR.&lt;x&gt; = PolynomialRing(Zmod(N))
+            f = int(tp,2) + x*mod + pl 
+            print(&#39;Try&#39;, len(hex(p)))
+            rr = f.monic().small_roots(X=2^(256-2*idx), beta=0.4)
+            if rr != []:
+                print(rr)
+                print(tp)
+                p = int(f(rr[0]))
+                print(&#39;p = &#39;,p)
+                ok = True
+                return
+        except:
+            pass
+        return
+    
+    print(&#39;idx&#39;,idx)
+    if leak&amp;(1&lt;&lt;(255-idx))==0:
+        pq_xor(tp[:idx]+&#39;1&#39;+tp[idx+1:], tq[:idx]+&#39;1&#39;+tq[idx+1:], idx+1)
+        pq_xor(tp[:idx]+&#39;0&#39;+tp[idx+1:], tq[:idx]+&#39;0&#39;+tq[idx+1:], idx+1)
+    else:
+        pq_xor(tp[:idx]+&#39;1&#39;+tp[idx+1:], tq[:idx]+&#39;0&#39;+tq[idx+1:], idx+1)
+        pq_xor(tp[:idx]+&#39;0&#39;+tp[idx+1:], tq[:idx]+&#39;1&#39;+tq[idx+1:], idx+1)
+    return
+
+ok = False
+cnt = 0
+tp = tq = &#39;1&#39;+&#39;0&#39;*255
+pq_xor(tp,tq, 1)
+ 
+p = 64760524083545528318139240449356269097871629401328435356643510319660757701117
+d = gmpy2.invert(e,p-1)
+ 
+m2 = pow(c,d,p)
+#3939513057628514533900105670644286436358199
+flag2 = long_to_bytes(int(m2))
+</code></pre>
+<pre><code class="python"># flag1
+p = 64760524083545528318139240449356269097871629401328435356643510319660757701117
+E = EllipticCurve(Zmod(p),[114514,1919810])
+e_ = inverse_mod(e,E.order())
+G = e_ * E(P)
+flag1 = long_to_bytes(int(G.xy()[0]))
+
+print(flag1 + flag2)
+</code></pre>
+<h2 id="pading"><a href="#pading" class="headerlink" title="pading"></a>pading</h2><pre><code class="python">from Crypto.Util.number import *
+import gmpy2
+flag = b&#39;SHCTF&#123;********&#125;&#39;
+assert len(flag) == 39
+p = getPrime(512)
+q = getPrime(512)
+n = p * q
+e = 0x3
+pad = b&#39;a_easy_problem&#39;
+c = pow(bytes_to_long(flag + pad),e,n)
+print(f&#39;n = &#123;n&#125;&#39;)
+print(f&#39;c = &#123;c&#125;&#39;)
+&#39;&#39;&#39;
+n = 88925266725790614176978985153637789080822030175282904715598493945895245166667653623506950637695577885515323428031007445721031625346904589773583755621369569539894646842301921582373643494813568764645514457347651475434655240168639797455429889319467717602197149735488558521980460060971030679001002737135989081379
+c = 40163555624762340348570041191695482551610811286979685240673956204942190516868172042695831494716564410916937575793882661653526327850762355731766806531988424567396935008184593724634876174527495473578185969597195591837668991934008858114117407190127266840961661399395026531441718314388523035556743694153616077176
+&#39;&#39;&#39;
+</code></pre>
+<p>exp:</p>
+<p>flag有点长，然后加了pad，但是pad已经给了，所以未知部分并不太长，符合coopersmith的条件。</p>
+<pre><code class="python">from Crypto.Util.number import *
+
+n = 88925266725790614176978985153637789080822030175282904715598493945895245166667653623506950637695577885515323428031007445721031625346904589773583755621369569539894646842301921582373643494813568764645514457347651475434655240168639797455429889319467717602197149735488558521980460060971030679001002737135989081379
+c = 40163555624762340348570041191695482551610811286979685240673956204942190516868172042695831494716564410916937575793882661653526327850762355731766806531988424567396935008184593724634876174527495473578185969597195591837668991934008858114117407190127266840961661399395026531441718314388523035556743694153616077176
+e = 0x3
+pad = b&#39;a_easy_problem&#39;
+PR.&lt;x&gt; = PolynomialRing(Zmod(n))
+f = (x * 256 ** len(pad) + bytes_to_long(pad)) ** e - c
+f = f.monic()
+flag = f.small_roots(X=2 ** (39 * 8),beta=0.9,epsilon=0.03)
+print(long_to_bytes(int(flag[0])))
+</code></pre>
+<h2 id="worde很大"><a href="#worde很大" class="headerlink" title="worde很大"></a>worde很大</h2><pre><code class="python">import gmpy2
+from Crypto.Util.number import *
+from enc import flag
+
+m = bytes_to_long(flag)
+p = getPrime(512)
+q = getPrime(512)
+n = p*q
+e = getPrime(200)
+d = gmpy2.invert(e,(p-1)*(q-1))
+dp = d % (p-1)
+c = pow(m,e,n)
+
+print(f&quot;n = &#123;n&#125;&quot;)
+print(f&quot;c = &#123;c&#125;&quot;)
+print(f&quot;e = &#123;e&#125;&quot;)
+print(f&quot;dp = &#123;dp&#125;&quot;)
+&#39;&#39;&#39;
+n = 115515571898174876218981859001454931605004972716977243469287394127512192363779470526054603716588099414019450006763757394190630930013648641786077436827746642661876619161637860418155678831315591087881465046824187409384523515896714190346462537788892486637416398025444806700379252307786369246845716404989752501389
+c = 59022951400084401571296619763940304204631986982336332929632858883229505121317947890813288669173525619680320041372238944401947604215052939676594219177499970268852001305969409553072936766450801645767881017660967972861188714032933418524965669752906319830827483817966088130951093441496850545961357957507699583831
+e = 1486959049663531472143038905223841284171772922831872838976599
+dp = 2634722143918242121374646336711378512559772003469465687575508203789099196127320294411489576184834945221184222436264461306770774475661140034746877513780759
+&#39;&#39;&#39;
+</code></pre>
+<p>exp:</p>
+<pre><code class="python">from Crypto.Util.number import *
+import gmpy2
+
+n = 115515571898174876218981859001454931605004972716977243469287394127512192363779470526054603716588099414019450006763757394190630930013648641786077436827746642661876619161637860418155678831315591087881465046824187409384523515896714190346462537788892486637416398025444806700379252307786369246845716404989752501389
+c = 59022951400084401571296619763940304204631986982336332929632858883229505121317947890813288669173525619680320041372238944401947604215052939676594219177499970268852001305969409553072936766450801645767881017660967972861188714032933418524965669752906319830827483817966088130951093441496850545961357957507699583831
+e = 1486959049663531472143038905223841284171772922831872838976599
+dp = 2634722143918242121374646336711378512559772003469465687575508203789099196127320294411489576184834945221184222436264461306770774475661140034746877513780759
+
+p = gmpy2.gcd(pow(3,e*dp,n)-3,n)
+q = n//p
+phi = (p-1)*(q-1)
+d = gmpy2.invert(e,phi)
+m = pow(c,d,n)
+flag = long_to_bytes(m)
+print(flag)
+</code></pre>
+<p>W</p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 欢迎指出任何有错误或不够清晰的表达，可以邮件至 2921642540@qq.com 进行反馈。 </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2024 Puplovoi
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="Toggle full screen shortcut key s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
