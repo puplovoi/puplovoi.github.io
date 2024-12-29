@@ -315,7 +315,73 @@ printf(&quot;%d&quot;, sum);
 <p>C. 30</p>
 <p>D. 46</p>
 </li>
+<li><p>以下关于函数的叙述中，错误的是 ( )。</p>
+<p>A. 函数未被调用时，系统将不为形参分配内存单元。</p>
+<p>B. 实参与形参的个数应相等，且实参与形参的类型应尽量对应一致。</p>
+<p>C. 当形参是变量时，实参可以是常量、变量或表达式。</p>
+<p>D. 形参可以是常量、变量或表达式。</p>
+</li>
+<li><p>函数调用在程序中出现的位置一般有 3 种方式，下面叙述中错误的是 ( )。</p>
+<p>A. 函数调用可以作为一个函数的实参。</p>
+<p>B. 函数调用可以作为一个函数的形参。</p>
+<p>C. 函数调用可以作为独立的语句存在。</p>
+<p>D. 函数调用可以出现在表达式中。</p>
+</li>
+<li><p>运行下面程序，输出结果是 ( )。</p>
+<pre><code class="c">#include &lt;stdio.h&gt;
+int Fun(int u, int v);
+int main()
+&#123;
+  int c, a = 2, b = 6;
+  c = Fun(a, b);
+  printf(&quot;%d\n&quot;, c);
+  return 0;
+&#125;
+int Fun(int u, int v)
+&#123;
+  int w;
+  w = u + v;
+  return w;
+&#125;
+</code></pre>
+<p>A. 6</p>
+<p>B. 7</p>
+<p>C. 8</p>
+<p>D. 9</p>
+</li>
+<li><p>运行下面程序，输出结果是 ( )。</p>
+<pre><code class="c">#include &lt;stdio.h&gt;
+void Fun(int x);
+int main()
+&#123;
+  Fun(12 + 5);
+  return 0;
+&#125;
+void Fun(int x)
+&#123;
+  printf(&quot;%d\n&quot;, x);
+&#125;
+</code></pre>
+<p>A. 12</p>
+<p>B. 13</p>
+<p>C. 17</p>
+<p>D. 18</p>
+</li>
+<li><p>要用<code>sqrt(x)</code>数学函数，需要在程序开始处通过预处理指令引入头文件(          )</p>
+<pre><code class="c">#include &lt;___&gt;
+</code></pre>
+</li>
 <li></li>
+<li><br>
+
+
+	<div class="row">
+    <embed src="https://github.com/puplovoi/puplovoi.github.io/document/data%20structure.pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+<br></li>
 </ol>
 ]]></content>
       <categories>
