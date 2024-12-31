@@ -1912,13 +1912,8 @@ int IsPrime(int n)
       </categories>
   </entry>
   <entry>
-    <title></title>
-    <url>/2025/01/01/0/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2025/01/01/0/</url>
+    <title>C语言—排序+查找</title>
+    <url>/2025/01/01/a2206cf4/</url>
     <content><![CDATA[<h1 id="C语言排序"><a href="#C语言排序" class="headerlink" title="C语言排序"></a>C语言排序</h1><h3 id="一、冒泡排序（Bubble-Sort）"><a href="#一、冒泡排序（Bubble-Sort）" class="headerlink" title="一、冒泡排序（Bubble Sort）"></a>一、冒泡排序（Bubble Sort）</h3><ul>
 <li><strong>基本思想</strong>：比较相邻的元素，如果顺序错误则交换它们。每一轮比较都会将最大（或最小）的元素 “冒泡” 到数组的末尾。</li>
 <li>算法步骤：<ol>
@@ -2147,5 +2142,8 @@ int interpolationSearch(int arr[], int n, int target) &#123;
 &#125;
 </code></pre>
 ]]></content>
+      <categories>
+        <category>C语言</category>
+      </categories>
   </entry>
 </search>
