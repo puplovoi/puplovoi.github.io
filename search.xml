@@ -2164,10 +2164,7 @@ int main()
 &#125;
 </code></pre>
 <ol start="2">
-<li><p>这是一道编程题目，要求实现如下分段函数：</p>
-<p>$$ y&#x3D;\left{ \begin{matrix} 1 (x &gt; 0) \ 0(x&#x3D;0)\-1(x&lt;0)  \end{matrix} \right. $$</p>
-<p>以下是使用 C 语言实现该分段函数的代码</p>
-</li>
+<li><img src="/../image/%E7%AC%AC%E4%BA%8C%E9%A2%98.jpg"></li>
 </ol>
 <pre><code class="c">#include &lt;stdio.h&gt;
 int main() &#123;
