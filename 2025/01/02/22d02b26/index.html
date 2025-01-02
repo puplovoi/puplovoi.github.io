@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>friends | Puplovoi&#39;s blog</title>
+  <title>C语言代码 | Puplovoi&#39;s blog</title>
   <meta name="keywords" content="">
-  <meta name="description" content="friends | Puplovoi&#39;s blog">
+  <meta name="description" content="C语言代码 | Puplovoi&#39;s blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="friends">
@@ -272,24 +272,34 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-C语言代码" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">friends</h1>
+        <h1 class="article-title">C语言代码</h1>
     
     <div class="article-meta">
         
         
+        <span class="author"><a>puplovoi</a></span>
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="C语言">C语言</a>
+            
+        </span>
         
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-10-03 16:04:35'>2024-10-03 16:04</time>
+            Created At : <time class="date" title='Updated At: 2025-01-02 15:03:35'>2025-01-02 14:55</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:0</span>
+        <span>Count:754</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -308,7 +318,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-world"><span class="toc-text">Hello, world!</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A0%E7%AC%A6%E5%8F%B7%E6%95%B4%E5%9E%8B"><span class="toc-text">无符号整型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="toc-text">数据类型转换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%8E%E6%95%B4%E6%95%B0%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="toc-text">字符与整数的转换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sizeof-%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">sizeof 运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8F%E5%AE%9A%E4%B9%89"><span class="toc-text">宏定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9F%AD%E8%B7%AF%E7%89%B9%E6%80%A7"><span class="toc-text">短路特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E5%90%88%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">复合赋值运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%A2%9E%E8%BF%90%E7%AE%97"><span class="toc-text">自增运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">条件运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#if-%E8%AF%AD%E5%8F%A5"><span class="toc-text">if 语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5"><span class="toc-text">循环语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-text">数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-text">函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E4%BD%93"><span class="toc-text">结构体</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -324,7 +334,200 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello, world!"></a>Hello, world!</h2><pre><code class="c">#include &lt;stdio.h&gt;
+int main()
+&#123;
+    printf(&quot;Hello, world!\n&quot;);
+    return 0;
+&#125;
+</code></pre>
+<h2 id="无符号整型"><a href="#无符号整型" class="headerlink" title="无符号整型"></a>无符号整型</h2><pre><code class="c">#include &lt;stdio.h&gt;
+int main()
+&#123;
+    unsigned int a = 1;
+    printf(&quot;%u\n&quot;, a - 2);
+    return 0;
+&#125;
+</code></pre>
+<h2 id="数据类型转换"><a href="#数据类型转换" class="headerlink" title="数据类型转换"></a>数据类型转换</h2><pre><code class="c">#include &lt;stdio.h&gt;
+int main()
+&#123;
+    int a;
+    float b;
+    a = 4 / 3;
+    printf(&quot;%d\n&quot;, a);
+    a = 4 / 3.0;
+    printf(&quot;%d\n&quot;, a);
+    b = 4 / 3;
+    printf(&quot;%f\n&quot;, b);
+    b = 4 / 3.0;
+    printf(&quot;%f\n&quot;, b);
+    return 0;
+&#125;
+</code></pre>
+<h2 id="字符与整数的转换"><a href="#字符与整数的转换" class="headerlink" title="字符与整数的转换"></a>字符与整数的转换</h2><pre><code class="c">#include &lt;stdio.h&gt;
+int main()
+&#123;
+    char c = &#39;a&#39;;
+    int a = 97;
+    printf(&quot;%d\n&quot;,c);
+    printf(&quot;%d\n&quot;,a);
+    printf(&quot;%c\n&quot;,c);
+    printf(&quot;%c\n&quot;,a);
+    return 0;
+&#125;
+</code></pre>
+<h2 id="sizeof-运算符"><a href="#sizeof-运算符" class="headerlink" title="sizeof 运算符"></a>sizeof 运算符</h2><pre><code class="c">#include &lt;stdio.h&gt;
+int main() &#123;
+    int a = 1;
+    printf(&quot;%d\n&quot;,sizeof a);
+    printf(&quot;%d\n&quot;,sizeof(int));
+&#125;
+</code></pre>
+<h2 id="宏定义"><a href="#宏定义" class="headerlink" title="宏定义"></a>宏定义</h2><pre><code class="c">#include &lt;stdio.h&gt;
+#define A 3+4
+int main() &#123;
+    int a = 2 * A / A + A;
+    printf(&quot;%d\n&quot;, a);
+    return 0;
+&#125;
+</code></pre>
+<h2 id="短路特性"><a href="#短路特性" class="headerlink" title="短路特性"></a>短路特性</h2><pre><code class="c">#include &lt;stdio.h&gt;
+int main()
+&#123;
+    int a = 0, b = 1, c = 2;
+    int d;
+    // d = a &amp;&amp; b++ &amp;&amp; c;
+    // d = (++a) &amp;&amp; (b -= 1) &amp;&amp; (c *= 2);
+    // d = (a = 1) &amp;&amp; (b = 0) &amp;&amp; (c = 3);
+
+    if (d)
+        printf(&quot;a = %d, b = %d, c = %d\n&quot;, a, b, c);
+    else
+        printf(&quot;a = %d, b = %d, c = %d\n&quot;, a, b, c);
+    return 0;
+&#125;
+</code></pre>
+<h2 id="复合赋值运算符"><a href="#复合赋值运算符" class="headerlink" title="复合赋值运算符"></a>复合赋值运算符</h2><pre><code class="c">#include &lt;stdio.h&gt;
+int main()
+&#123;
+    int a = 10;
+    a += a *= a -= 6;
+    printf(&quot;%d&quot;, a);
+    return 0;
+&#125;
+</code></pre>
+<h2 id="自增运算"><a href="#自增运算" class="headerlink" title="自增运算"></a>自增运算</h2><pre><code class="c">#include &lt;stdio.h&gt;
+int main()
+&#123;
+    int a = 4;
+    printf(&quot;%d\n&quot;, a++);
+    printf(&quot;%d\n&quot;, ++a);
+    int b = 4;
+    printf(&quot;%d\n&quot;, (b++) * (a++));
+    printf(&quot;%d\n&quot;, (++b) * (++a));
+    return 0;
+&#125;
+</code></pre>
+<h2 id="条件运算符"><a href="#条件运算符" class="headerlink" title="条件运算符"></a>条件运算符</h2><pre><code class="c">#include &lt;stdio.h&gt;
+int main() &#123;
+    int a = 10, b = 20;
+    int max;
+
+    // 使用条件运算符找出较大值
+    max = (a &gt; b)? a : b;
+
+    printf(&quot;较大值是: %d\n&quot;, max);
+    return 0;
+&#125;
+</code></pre>
+<h2 id="if-语句"><a href="#if-语句" class="headerlink" title="if 语句"></a>if 语句</h2><pre><code class="c">#include &lt;stdio.h&gt;
+int main()
+&#123;
+    int x = 0, y = 2, z = 5;
+    if (x &gt; 0)
+        if (y &gt; 0)
+            z = 10;
+    else
+        z = 20;
+    printf(&quot;x = %d, y = %d, z = %d\n&quot;, x, y, z);
+    return 0;
+&#125;
+</code></pre>
+<h2 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h2><pre><code class="c">#include &lt;stdio.h&gt;
+int main()
+&#123;
+    int i, s = 0;
+    for (i = 1; i &lt;= 10; i++);
+        s += i;
+    printf(&quot;i = %d, s = %d\n&quot;, i, s);
+    return 0;
+&#125;
+</code></pre>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><pre><code class="c">#include &lt;stdio.h&gt;
+int main()
+&#123;
+    int arr[5] = &#123;1, 2, 3, 4, 5&#125;;
+    int *p = arr;
+    printf(&quot;%d &quot;, *p);
+    // printf(&quot;%d\n&quot;, p);
+    printf(&quot;%d &quot;, *(p++));
+    // printf(&quot;%d\n&quot;, p);
+    printf(&quot;%d &quot;, *p++);
+    // printf(&quot;%d\n&quot;, p);
+    printf(&quot;%d &quot;, ++*p);
+    // printf(&quot;%d\n&quot;, p);
+    printf(&quot;%d &quot;, ++(*p));
+    // printf(&quot;%d\n&quot;, p);
+    printf(&quot;%d &quot;, *(++p));
+    // printf(&quot;%d\n&quot;, p);
+    // for(int i = 0; i &lt; 5; i++)
+    //     printf(&quot;%d &quot;, arr[i]);
+    return 0;
+&#125;
+</code></pre>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><pre><code class="c">#include &lt;stdio.h&gt;
+void swap(int a, int b)
+&#123;
+    int temp = a;
+    a = b;
+    b = temp;
+&#125;
+
+int main()
+&#123;
+    int x = 10, y = 20;
+    swap(x, y);
+    printf(&quot;x = %d, y = %d\n&quot;, x, y);
+    return 0;
+&#125;
+</code></pre>
+<h2 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h2><pre><code class="c">#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+struct student
+&#123;
+    int id;
+    char name[20];
+    int age;
+&#125;stud1, stud2 = &#123;102, &quot;Tom&quot;, 18&#125;;
+
+int main()
+&#123;
+    struct student stud3;
+    stud1.id = 101;
+    strcpy(stud1.name, &quot;John&quot;);
+    stud1.age = 17;
+
+    stud3.id = 103;
+    strcpy(stud3.name, &quot;Jerry&quot;);
+    stud3.age = 19;
+    printf(&quot;stud1.id = %d\n&quot;, stud1.id);
+    printf(&quot;stud2.name = %s\n&quot;, stud2.name);
+    printf(&quot;stud3.age = %d\n&quot;, stud3.age);
+&#125;
+</code></pre>
+
       
        <hr><span style="font-style: italic;color: gray;"> 欢迎指出任何有错误或不够清晰的表达，可以邮件至 2921642540@qq.com 进行反馈。 </span>
     </div>
