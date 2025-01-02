@@ -1673,7 +1673,6 @@ emp1.salary = 5000.0;
 #endif
 </code></pre>
 <p>通过条件编译，可依不同条件编译不同代码块。</p>
-<h1 id="如果大家还有什么问题，可以加我微信问我"><a href="#如果大家还有什么问题，可以加我微信问我" class="headerlink" title="如果大家还有什么问题，可以加我微信问我"></a>如果大家还有什么问题，可以加我微信问我</h1><p><img src="/../image/weixin.jpg" alt="微信" title="微信"></p>
 ]]></content>
       <categories>
         <category>C语言</category>
@@ -2527,6 +2526,15 @@ int main()
     printf(&quot;stud3.age = %d\n&quot;, stud3.age);
 &#125;
 </code></pre>
+]]></content>
+      <categories>
+        <category>C语言</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>如果大家还有什么问题，可以加我微信问我</title>
+    <url>/2025/01/02/407e4be2/</url>
+    <content><![CDATA[<h1 id="如果大家还有什么问题，可以加我微信问我"><a href="#如果大家还有什么问题，可以加我微信问我" class="headerlink" title="如果大家还有什么问题，可以加我微信问我"></a>如果大家还有什么问题，可以加我微信问我</h1><p><img src="/../image/weixin.jpg" alt="微信" title="微信"></p>
 ]]></content>
       <categories>
         <category>C语言</category>
