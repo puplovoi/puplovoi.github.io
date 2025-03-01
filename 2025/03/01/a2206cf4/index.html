@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>All Categories | Puplovoi&#39;s blog</title>
+  <title>C语言—排序+查找 | Puplovoi&#39;s blog</title>
   <meta name="keywords" content="">
-  <meta name="description" content="All Categories | Puplovoi&#39;s blog">
+  <meta name="description" content="C语言—排序+查找 | Puplovoi&#39;s blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="All Tags">
@@ -281,24 +281,34 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-C语言—排序+查找" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">All Categories</h1>
+        <h1 class="article-title">C语言—排序+查找</h1>
     
     <div class="article-meta">
         
         
+        <span class="author"><a>puplovoi</a></span>
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="C语言">C语言</a>
+            
+        </span>
         
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-10-05 10:26:18'>2020-02-02 20:00</time>
+            Created At : <time class="date" title='Updated At: 2025-01-01 02:48:18'>2025-03-01 11:07</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:0</span>
+        <span>Count:1.8k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -317,7 +327,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#C%E8%AF%AD%E8%A8%80%E6%8E%92%E5%BA%8F"><span class="toc-text">C语言排序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%EF%BC%88Bubble-Sort%EF%BC%89"><span class="toc-text">一、冒泡排序（Bubble Sort）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F%EF%BC%88Selection-Sort%EF%BC%89"><span class="toc-text">二、选择排序（Selection Sort）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81-%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F%EF%BC%88Insertion-Sort%EF%BC%89"><span class="toc-text">三、 插入排序（Insertion Sort）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%EF%BC%88Quick-Sort%EF%BC%89"><span class="toc-text">四、快速排序（Quick Sort）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%EF%BC%88Merge-Sort%EF%BC%89"><span class="toc-text">五、归并排序（Merge Sort）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#C%E8%AF%AD%E8%A8%80%E6%9F%A5%E6%89%BE"><span class="toc-text">C语言查找</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E9%A1%BA%E5%BA%8F%E6%9F%A5%E6%89%BE%EF%BC%88Sequential-Search%EF%BC%89"><span class="toc-text">一、顺序查找（Sequential Search）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%EF%BC%88Binary-Search%EF%BC%89"><span class="toc-text">二、二分查找（Binary Search）</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -333,7 +343,212 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="C语言排序"><a href="#C语言排序" class="headerlink" title="C语言排序"></a>C语言排序</h1><h3 id="一、冒泡排序（Bubble-Sort）"><a href="#一、冒泡排序（Bubble-Sort）" class="headerlink" title="一、冒泡排序（Bubble Sort）"></a>一、冒泡排序（Bubble Sort）</h3><ul>
+<li><strong>基本思想</strong>：比较相邻的元素，如果顺序错误则交换它们。每一轮比较都会将最大（或最小）的元素 “冒泡” 到数组的末尾。</li>
+<li>算法步骤：<ol>
+<li>比较相邻的元素。如果第一个比第二个大（升序排序），就交换它们。</li>
+<li>对每一对相邻元素做同样的工作，从开始第一对到结尾的最后一对。这步做完后，最后的元素会是最大的数。</li>
+<li>针对所有的元素重复以上的步骤，除了最后一个。</li>
+<li>持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。</li>
+</ol>
+</li>
+<li><strong>代码示例</strong>：</li>
+</ul>
+<pre><code class="c">void bubbleSort(int arr[], int n) &#123;
+    int i, j;
+    for (i = 0; i &lt; n - 1; i++) &#123;
+        for (j = 0; j &lt; n - i - 1; j++) &#123;
+            if (arr[j] &gt; arr[j + 1]) &#123;
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            &#125;
+        &#125;
+    &#125;
+&#125;
+</code></pre>
+<h3 id="二、选择排序（Selection-Sort）"><a href="#二、选择排序（Selection-Sort）" class="headerlink" title="二、选择排序（Selection Sort）"></a>二、选择排序（Selection Sort）</h3><ul>
+<li><strong>基本思想</strong>：首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置，然后，再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。以此类推，直到所有元素均排序完毕。</li>
+<li>算法步骤：<ol>
+<li>在未排序数组中找到最小（大）元素，记录其索引。</li>
+<li>将最小（大）元素与未排序数组的第一个元素交换位置。</li>
+<li>从未排序数组中移除已交换的元素，即缩小未排序数组的范围。</li>
+<li>重复上述步骤，直到整个数组排序完成。</li>
+</ol>
+</li>
+<li><strong>代码示例</strong>：</li>
+</ul>
+<pre><code class="c">void selectionSort(int arr[], int n) &#123;
+    int i, j, minIndex;
+    for (i = 0; i &lt; n - 1; i++) &#123;
+        minIndex = i;
+        for (j = i + 1; j &lt; n; j++) &#123;
+            if (arr[j] &lt; arr[minIndex]) &#123;
+                minIndex = j;
+            &#125;
+        &#125;
+        if (minIndex!= i) &#123;
+            int temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
+        &#125;
+    &#125;
+&#125;
+</code></pre>
+<h3 id="三、-插入排序（Insertion-Sort）"><a href="#三、-插入排序（Insertion-Sort）" class="headerlink" title="三、 插入排序（Insertion Sort）"></a>三、 插入排序（Insertion Sort）</h3><ul>
+<li><strong>基本思想</strong>：将一个数据插入到已经排好序的数组中的适当位置。就像扑克牌的整理过程，每次从手中未整理的牌中拿出一张，插入到已整理好的牌中的合适位置。</li>
+<li>算法步骤：<ol>
+<li>从第一个元素开始，该元素可以认为已经被排序。</li>
+<li>取出下一个元素，在已经排序的元素序列中从后向前扫描。</li>
+<li>如果该元素（已排序）大于新元素，将该元素移到下一个位置。</li>
+<li>重复步骤 3，直到找到已排序的元素小于或者等于新元素的位置。</li>
+<li>将新元素插入到该位置后。</li>
+<li>重复步骤 2 - 5，直到所有元素都被插入。</li>
+</ol>
+</li>
+<li><strong>代码示例</strong>：</li>
+</ul>
+<pre><code class="c">void insertionSort(int arr[], int n) &#123;
+    int i, key, j;
+    for (i = 1; i &lt; n; i++) &#123;
+        key = arr[i];
+        j = i - 1;
+        while (j &gt;= 0 &amp;&amp; arr[j] &gt; key) &#123;
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        &#125;
+        arr[j + 1] = key;
+    &#125;
+&#125;
+</code></pre>
+<h3 id="四、快速排序（Quick-Sort）"><a href="#四、快速排序（Quick-Sort）" class="headerlink" title="四、快速排序（Quick Sort）"></a>四、快速排序（Quick Sort）</h3><ul>
+<li><strong>基本思想</strong>：通过选择一个基准元素（pivot），将数组分为两部分，使得左边部分的元素都小于等于基准元素，右边部分的元素都大于等于基准元素，然后分别对左右两部分进行递归排序，最终使整个数组有序。</li>
+<li>算法步骤：<ol>
+<li>选择一个基准元素，通常选择数组的第一个元素、最后一个元素或中间元素。</li>
+<li>定义两个指针，一个指向数组的起始位置（left），一个指向数组的末尾位置（right）。</li>
+<li>从右向左移动 right 指针，直到找到一个小于基准元素的元素；从左向右移动 left 指针，直到找到一个大于基准元素的元素。</li>
+<li>交换这两个元素的位置。</li>
+<li>重复步骤 3 和 4，直到 left 和 right 指针相遇。</li>
+<li>将基准元素与 left（或 right）指针指向的元素交换位置，此时基准元素处于正确的排序位置。</li>
+<li>对基准元素左边和右边的子数组分别递归执行上述步骤，直到子数组的长度为 1 或 0，此时整个数组有序。</li>
+</ol>
+</li>
+<li><strong>代码示例</strong>：</li>
+</ul>
+<pre><code class="c">int partition(int arr[], int low, int high) &#123;
+    int pivot = arr[high];
+    int i = (low - 1);
+    for (int j = low; j &lt; high; j++) &#123;
+        if (arr[j] &lt;= pivot) &#123;
+            i++;
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        &#125;
+    &#125;
+    int temp = arr[i + 1];
+    arr[i + 1] = arr[high];
+    arr[high] = temp;
+    return (i + 1);
+&#125;
+void quickSort(int arr[], int low, int high) &#123;
+    if (low &lt; high) &#123;
+        int pi = partition(arr, low, high);
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
+    &#125;
+&#125;
+</code></pre>
+<h3 id="五、归并排序（Merge-Sort）"><a href="#五、归并排序（Merge-Sort）" class="headerlink" title="五、归并排序（Merge Sort）"></a>五、归并排序（Merge Sort）</h3><ul>
+<li><strong>基本思想</strong>：采用分治思想，将一个数组分成两个子数组，分别对这两个子数组进行排序，然后将排序好的子数组合并成一个有序的数组。</li>
+<li>算法步骤：<ol>
+<li>分解：将数组不断地分成两半，直到每个子数组只包含一个元素（单个元素的数组是有序的）。</li>
+<li>合并：将两个有序的子数组合并成一个更大的有序数组。合并过程中，比较两个子数组的当前元素，将较小的元素放入结果数组中，直到其中一个子数组为空，然后将另一个子数组的剩余元素直接复制到结果数组的末尾。</li>
+<li>重复上述步骤，直到所有子数组都合并成一个完整的有序数组。</li>
+</ol>
+</li>
+<li><strong>代码示例</strong>：</li>
+</ul>
+<pre><code class="c">void merge(int arr[], int l, int m, int r) &#123;
+    int n1 = m - l + 1;
+    int n2 = r - m;
+    int L[n1], R[n2];
+    for (int i = 0; i &lt; n1; i++) &#123;
+        L[i] = arr[l + i];
+    &#125;
+    for (int j = 0; j &lt; n2; j++) &#123;
+        R[j] = arr[m + 1 + j];
+    &#125;
+    int i = 0, j = 0, k = l;
+    while (i &lt; n1 &amp;&amp; j &lt; n2) &#123;
+        if (L[i] &lt;= R[j]) &#123;
+            arr[k] = L[i];
+            i++;
+        &#125; else &#123;
+            arr[k] = R[j];
+            j++;
+        &#125;
+        k++;
+    &#125;
+    while (i &lt; n1) &#123;
+        arr[k] = L[i];
+        i++;
+        k++;
+    &#125;
+    while (j &lt; n2) &#123;
+        arr[k] = R[j];
+        j++;
+        k++;
+    &#125;
+&#125;
+void mergeSort(int arr[], int l, int r) &#123;
+    if (l &lt; r) &#123;
+        int m = l + (r - l) / 2;
+        mergeSort(arr, l, m);
+        mergeSort(arr, m + 1, r);
+        merge(arr, l, m, r);
+    &#125;
+&#125;
+</code></pre>
+<h1 id="C语言查找"><a href="#C语言查找" class="headerlink" title="C语言查找"></a>C语言查找</h1><h3 id="一、顺序查找（Sequential-Search）"><a href="#一、顺序查找（Sequential-Search）" class="headerlink" title="一、顺序查找（Sequential Search）"></a>一、顺序查找（Sequential Search）</h3><ul>
+<li><strong>原理</strong>：从数据集合的第一个元素开始，逐个与目标元素进行比较，直到找到目标元素或遍历完整个集合。</li>
+<li><strong>适用场景</strong>：适用于数据量较小或数据无序的情况。</li>
+<li><strong>代码示例</strong>：</li>
+</ul>
+<pre><code class="c">#include &lt;stdio.h&gt;
+
+int sequentialSearch(int arr[], int n, int target) &#123;
+    for (int i = 0; i &lt; n; i++) &#123;
+        if (arr[i] == target) &#123;
+            return i;
+        &#125;
+    &#125;
+    return -1;
+&#125;
+</code></pre>
+<h3 id="二、二分查找（Binary-Search）"><a href="#二、二分查找（Binary-Search）" class="headerlink" title="二、二分查找（Binary Search）"></a>二、二分查找（Binary Search）</h3><ul>
+<li><strong>原理</strong>：要求数据集合必须是有序的。每次将待查找区间缩小一半，通过比较中间元素与目标元素的大小，决定继续在左半部分还是右半部分查找。</li>
+<li><strong>适用场景</strong>：适用于数据量较大且数据有序的情况。</li>
+<li><strong>代码示例</strong>：</li>
+</ul>
+<pre><code class="c">#include &lt;stdio.h&gt;
+
+int binarySearch(int arr[], int n, int target) &#123;
+    int left = 0, right = n - 1;
+    while (left &lt;= right) &#123;
+        int mid = left + (right - left) / 2;
+        if (arr[mid] == target) &#123;
+            return mid;
+        &#125; else if (arr[mid] &lt; target) &#123;
+            left = mid + 1;
+        &#125; else &#123;
+            right = mid - 1;
+        &#125;
+    &#125;
+    return -1;
+&#125;
+</code></pre>
+
       
        <hr><span style="font-style: italic;color: gray;"> 欢迎指出任何有错误或不够清晰的表达，可以邮件至 2921642540@qq.com 进行反馈。 </span>
     </div>

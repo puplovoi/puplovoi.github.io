@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>All Categories | Puplovoi&#39;s blog</title>
+  <title>C语言编程题 | Puplovoi&#39;s blog</title>
   <meta name="keywords" content="">
-  <meta name="description" content="All Categories | Puplovoi&#39;s blog">
+  <meta name="description" content="C语言编程题 | Puplovoi&#39;s blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="All Tags">
@@ -281,24 +281,34 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-C语言编程题" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">All Categories</h1>
+        <h1 class="article-title">C语言编程题</h1>
     
     <div class="article-meta">
         
         
+        <span class="author"><a>puplovoi</a></span>
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="C语言">C语言</a>
+            
+        </span>
         
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-10-05 10:26:18'>2020-02-02 20:00</time>
+            Created At : <time class="date" title='Updated At: 2025-01-01 15:39:52'>2025-03-01 11:07</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:0</span>
+        <span>Count:874</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -317,7 +327,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#C%E8%AF%AD%E8%A8%80%E7%BC%96%E7%A8%8B%E9%A2%98"><span class="toc-text">C语言编程题</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -333,7 +343,207 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="C语言编程题"><a href="#C语言编程题" class="headerlink" title="C语言编程题"></a>C语言编程题</h1><ol>
+<li><p>这是一道编程题目，要求根据输入的学生成绩（0 - 100）判断并输出成绩等级，成绩等级分为以下 4 类：</p>
+<ul>
+<li><p>90 - 100 分：优秀</p>
+</li>
+<li><p>80 - 89 分：良好</p>
+</li>
+<li><p>60 - 79 分：合格</p>
+</li>
+<li><p>0 - 59 分：不合格</p>
+</li>
+</ul>
+</li>
+</ol>
+<pre><code class="c">#include &lt;stdio.h&gt;
+int main()
+&#123;
+    int score;
+    scanf(&quot;%d&quot;, &amp;score);
+    if (score &gt;= 90)
+    &#123;
+        printf(&quot;优秀&quot;);
+    &#125;
+    else if (score &gt;= 80)
+    &#123;
+        printf(&quot;良好&quot;);
+    &#125;
+    else if (score &gt;= 60)
+    &#123;
+        printf(&quot;合格&quot;);
+    &#125;
+    else
+        printf(&quot;不合格&quot;);
+    return 0;
+&#125;
+</code></pre>
+<ol start="2">
+<li><img src="/../image/%E7%AC%AC%E4%BA%8C%E9%A2%98.jpg"></li>
+</ol>
+<pre><code class="c">#include &lt;stdio.h&gt;
+int main() &#123;
+    int x, y;
+    scanf(&quot;%d&quot;, &amp;x);
+    if (x &gt; 0) &#123;
+        y = 1;
+    &#125; else if (x == 0) &#123;
+        y = 0;
+    &#125; else &#123;
+        y = -1;
+    &#125;
+    printf(&quot;%d&quot;, y);
+    return 0;
+&#125;
+</code></pre>
+<ol start="3">
+<li>下面程序的功能是计算 x!，并输出。请编写函数 GetFact (int n) 的定义部分求 x 的阶乘值。</li>
+</ol>
+<p>给出了部分代码框架：</p>
+<pre><code class="c">#include &lt;stdio.h&gt;
+int GetFact(int n);
+int main(void)
+&#123;
+    int x, s;
+    printf(&quot;请输入一个正整数的值：&quot;);
+    scanf(&quot;%d&quot;, &amp;x);
+    s = GetFact(x);
+    printf(&quot;\n %d! = %d\n&quot;, x, s);
+    return 0;
+&#125;
+int GetFact(int n)  /*求阶乘函数*/
+&#123;
+    
+&#125;
+</code></pre>
+<pre><code class="c">//方法一
+int GetFact(int n) /*求阶乘函数*/
+&#123;
+    int fact = 1;
+    if (n == 0)
+        fact = 1;
+    else
+    &#123;
+        for (int i = 1; i &lt;= n; i++)
+            fact *= i;
+    &#125;
+    return fact;
+&#125;
+
+//方法二
+int GetFact(int n) /*求阶乘函数*/
+&#123;
+    if (n == 0 || n == 1)
+        return 1;
+    else
+        return n * GetFact(n - 1);
+&#125;
+</code></pre>
+<ol start="4">
+<li>下面程序的功能是计算 x 的 n 次方，并输出。请编写函数 GetPower (double x, int n) 的定义部分求 x 的 n 次方。</li>
+</ol>
+<p>给出了部分代码框架：</p>
+<pre><code class="c">#include &lt;stdio.h&gt;
+double GetPower(double x, int n);
+int main(void)
+&#123;
+    double x, pow_value;
+    int n;
+    printf(&quot;请输入实数x的值：&quot;);
+    scanf(&quot;%lf&quot;, &amp;x);
+    printf(&quot;请输入正整数n的值：&quot;);
+    scanf(&quot;%d&quot;, &amp;n);
+    pow_value = GetPower(x, n);
+    printf(&quot;\n Power(%.2f, %d) = %.2f\n&quot;, x, n, pow_value);
+    return 0;
+&#125;
+//* 计算x的n次方 *//
+double GetPower(double x, int n)
+&#123;
+    
+&#125;
+</code></pre>
+<pre><code class="c">//* 计算x的n次方 *//
+double GetPower(double x, int n)
+&#123;
+    if (n == 0)
+        return 1;
+    else
+    &#123;
+        double result = 1;
+        for (int i = 0; i &lt; n; i++)
+        &#123;
+            result *= x;
+        &#125;
+        return result;
+    &#125;
+&#125;
+</code></pre>
+<ol start="5">
+<li>已知整型数组 score 中存储了 10 名学生的成绩，编程统计 80 分以上的人数。请编写函数 int GetMax (int a [], int n) 的定义部分统计 80 分以上的人数。</li>
+</ol>
+<p>给出了部分代码框架：</p>
+<pre><code class="c">#include &lt;stdio.h&gt;
+#define N 10
+int GetMax(int a[], int n);
+int main(void)
+&#123;
+    int score[N] = &#123;87, 82, 94, 89, 92, 85, 87, 90, 97, 86&#125;;
+    int m;
+    m = GetMax(score, N);
+    printf(&quot;80分以上的人数是 %d\n&quot;, m);
+    return 0;
+&#125;
+int GetMax(int a[], int n)
+&#123;
+    
+&#125;
+</code></pre>
+<pre><code class="c">int GetMax(int a[], int n)
+&#123;
+    int count = 0;
+    for (int i = 0; i &lt; n; i++)
+    &#123;
+        if (a[i] &gt;= 80)
+        &#123;
+            count++;
+        &#125;
+    &#125;
+    return count;
+&#125;
+</code></pre>
+<ol start="6">
+<li>已知整型数组 score 中存储了 10 名学生的成绩，编程求学生的最高分。请编写函数 int GetMax (int a [], int n) 的定义部分求学生的最高分。</li>
+</ol>
+<p>给出了部分代码框架：</p>
+<pre><code class="c">#include &lt;stdio.h&gt;
+#define N 10
+int GetMax(int a[], int n);
+int main(void)
+&#123;
+    int score[N] = &#123;87, 82, 94, 89, 92, 85, 87, 90, 97, 86&#125;;
+    int m;
+    m = GetMax(score, N);
+    printf(&quot;学生的最高分是 %d\n&quot;, m);
+    return 0;
+&#125;
+int GetMax(int a[], int n)
+&#123;
+    
+&#125;
+</code></pre>
+<pre><code class="c">int GetMax(int a[], int n) &#123;
+    int max = a[0]; // 先假设数组的第一个元素是最大值
+    for (int i = 1; i &lt; n; i++) &#123; // 从数组的第二个元素开始遍历
+        if (a[i] &gt; max) &#123; // 如果当前元素比最大值大
+            max = a[i]; // 更新最大值
+        &#125;
+    &#125;
+    return max;
+&#125;
+</code></pre>
+
       
        <hr><span style="font-style: italic;color: gray;"> 欢迎指出任何有错误或不够清晰的表达，可以邮件至 2921642540@qq.com 进行反馈。 </span>
     </div>
